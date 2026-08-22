@@ -34,162 +34,236 @@
 
 									<span class="image main"><img src="images/project_banner.jpg" alt="" /></span>
 
-									<details>
-                                     <summary>Project Overview</summary>
+				<details>
+    <summary>Project Overview</summary>
 
-                                     <h3>Project Title</h3>
-                                     <p> AI-Assisted Running Retail Database Analytics and Performance Dashboard </p>
+    <h3>Project Title</h3>
+    <p>AI-Assisted Ultra-Marathon DNF Database Analytics and Dashboard</p>
 
-									 <h3>Project scenario and client</h3>
-									 <br>Initially, a suitable scenario for the project was identified through research into areas where AI-assisted database analytics could provide practical benefits. The project focuses on running gear and performance, reflecting the growing popularity of running and the challenges associated with the selection of appropriate running gear.</br>
-									 <br>For this project, I position myself as a software and database consultant working for a fictional fitness and running retail organisation. The client is interested in investigating whether the type of running gear purchased by customers is associated with differences in their running performance.</br>
-									 <br>The organisation requires a more structured approach to managing sales and fitness performance data to improve the recommendation of personalised products to their customers, as information relating to customers’ purchases and running performance is difficult to analyse collectively.</br>
-									 <br>The proposed solution is a logical relational database capable of storing, cleansing, managing and analysing customer, product, sales, training and race performance data. The resulting analytical data will be presented through an interactive dashboard to provide the client with meaningful insights into product usage and any associations with running performance.</br>
-									 <br>The project will investigate how AI tools can support the database development and analytics pipeline, including schema design, data cleansing, SQL development, feature extraction and insight generation, while maintaining appropriate human validation, data-quality controls and critical oversight.</br>
-									
-									 <h3>Project Aim</h3>
-									 <p>To design and develop an AI-assisted relational database and analytics solution that enables a fictional running retail organisation to integrate sales and running performance data and generate meaningful business and performance insights that support personalised product recommendations to customers.</p>
+    <h3>Project scenario and client</h3>
 
-									 <h3> Project Objectives</h3>
-									 <p>The broad objectives of this project are as follows:
-								     <li>Identify the client's data and information requirements.</li>
-								     <li>Investigate the quality and structure of the available running and retail data.</li>
-								     <li>Design a logical relational database integrating customer, product, sales and performance data.</li>
-								     <li>Investigate how AI can support database schema design and data cleansing.</li>
-								     <li>Develop a data-cleaning and transformation process using Python/Pandas.</li>
-								     <li>Implement the proposed relational database.</li>
-									 <li>Develop SQL queries to answer relevant business and performance questions.</li>
-									 <li>Extract useful analytical features from the dataset.</li>
-									 <li>Develop an interactive dashboard.</li>
-									 <li>Critically evaluate the effectiveness and limitations of AI within the database analytics pipeline.</li>
-									 </p>
+    <p>
+        As participation in ultra-distance running continues to grow, race organisers
+        face challenges in understanding why some races have higher levels of
+        non-completion. This project focuses on analysing characteristics associated
+        with runners not completing a race (Did Not Finish - DNF).
+    </p>
 
-									 <h3>Project Research Questions</h3>
-									 <p> The key project questions that will guide the development and analysis within this project are as follows:
-									 <li>PQ1: What entities, attributes and relationships are required to integrate running gear and customer purchase data with running training and race performance data?</li>
-									 <li>PQ2: What data-quality problems exist within the dataset, and how can AI assist in identifying and resolving them?</li>
-									 <li>PQ3: How does race performance vary between customers using different running product categories?</li>
-									 <li>PQ4: Are there observable differences in race performance when customers use specific running products?</li>
-									 <li>PQ5: How accurate and useful are AI-generated database and analytical outputs when compared with human-validated results?</li>
-									 </p>	
-									 </details>	
+    <p>
+        For this project, I position myself as a database and data analytics consultant
+        working for a fictional ultra-running organisation. The client is interested
+        in investigating which race characteristics are associated with higher DNF
+        rates across ultra-marathon events.
+    </p>
 
-									 <details>
-									 <summary>Client Requirements</summary>
-									 <h3>What does the client require?</h3>
-									 <p>The client requires a system that can identify associations between running gear and running performance. The system should combine customer, training, race and product data to identify patterns that can be used to provide personalised gear recommendations.
-                                     <br> To support meaningful performance analysis, the system should also distinguish between products purchased by customers and products used during training or races. This will allow the organisation to investigate whether particular products or product categories are associated with differences in running performance, rather than assuming that a purchased product was necessarily used during a particular activity or race.
-                                     </p>
-									 <h3>Why does the client need this?</h3>
-									 <p> The client needs these insights to improve the quality and personalisation of product recommendations provided to customers. Recommendations can be incorporated into personalised customer support, allowing recommendations to be based on customer characteristics, training and running performance rather than relying on generic product suggestions. </p>
-									 <h3>What decisions should the database support?</h3>
-									 <p>The database should support decisions relating to:
-									 <li>Personalised product recommendations based on customer characteristics, training and running performance</li>
-									 <li>Product selection, by identifying which types of running gear are associated with differences in performance</li>
-									 <li>Customer segmentation, by identifying different customer profiles and their equipment and training needs</li>
-									 <li>Sales strategies, by helping staff identify appropriate products for different customers</li>
-									 <li>Customer support, by providing evidence-based information that can be used to explain recommendations and improve customer trust</li></p>
+    <p>
+        The organisation requires a structured approach to analysing DNF patterns
+        across races. This could help race organisers identify races with comparatively
+        high levels of non-completion and investigate which characteristics may be
+        associated with these outcomes.
+    </p>
 
-									 <h3>Core client requirements</h3>
-									 <p> The client requirements that need to be satisfied are outlined in Table 1.	</p>
-									 <p>
-									 <b>Table 1: Client requirements and priorities</b>
-									 <table>
-										<tr>
-											<th>Requirement</th>
-											<th>Description</th>
-											<th>Priority</th>
-										</tr>
-										<tr>
-											<td>R1</td>
-											<td>Store customer information</td>
-											<td>High</td>
-										</tr>
-										<tr>
-											<td>R2</td>
-											<td>Store running gear and product information</td>
-											<td>High</td>
-										</tr>
-										<tr>
-											<td>R3</td>
-											<td>Record customer purchases</td>
-											<td>High</td>
-										</tr>
-										<tr>
-											<td>R4</td>
-											<td>Record customer training charateristics and activities</td>
-											<td>High</td>
-										</tr>
-										<tr>
-											<td>R5</td>
-											<td>Record race results and performance</td>
-											<td>High</td>
-										</tr>
-										<tr>
-											<td>R6</td>
-											<td>Record products used during training and races</td>
-											<td>High</td>
-										</tr>
-										<tr>
-											<td>R7</td>
-											<td>Analyse associations between running gear and performance</td>
-											<td>High</td>
-										</tr>
-										<tr>
-											<td>R8</td>
-											<td>Analyse associationss between training and performance</td>
-											<td>High</td>
-										</tr>
-										<tr>
-											<td>R9</td>
-											<td>Provide personalised product recommendations</td>
-											<td>High</td>
-										</tr>
-										<tr>
-											<td>R10</td>
-											<td>Track recommendation and sales outcomes</td>
-											<td>Medium</td>
-										</tr>
-										<tr>
-											<td>R11</td>
-											<td>Provide an interactive analytics dashboard</td>
-											<td>High</td>
-										</tr>
-									 </table>
-									 </p>
-									 <h3>Core client databases</h3>
-									 <p>To achieve the requirements outlined in Table 1, the proposed database will require the following core tables, as shown in Table 2. The structure distinguishes between customer purchases and the products used during training and races, allowing product usage to be analysed alongside performance data.</p>
-									 <p><b>Table 2: Core databe tables</b></p>
-									 <table>	
-										<tr>
-											<th>Table</th>
-											<th>Purpose</th>
-										</tr>
-										<tr>
-											<td>Customers</td>
-											<td>Stores customer characteristics and relevant demographic information</td>
-										</tr>
-										<tr>
-											<td>Products</td>
-											<td>Stores running gear and product information</td>
-										</tr>
-										<tr>
-											<td>Purchases</td>
-											<td>Records products purchased by customers</td>
-										</tr>
-										<tr>
-											<td>Training</td>
-											<td>Stores customers trainng activities and characteristics</td>
-										</tr>
-										<tr>
-											<td>Race Results</td>
-											<td>Stores race performance and outcomes</td>
-										</tr>
-										<tr>
-											<td>Product Usage</td>
-											<td>Record products used by customers during training and races</td>
-										</tr>
-									 </table>
+    <p>
+        The proposed solution is a relational database capable of storing, cleansing,
+        managing and analysing race data from the UTMB World Race dataset. The resulting
+        analytical data will be presented through an interactive dashboard to provide
+        the client with meaningful insights into DNF patterns.
+    </p>
+
+    <p>
+        The project will also investigate how AI tools can support database development
+        and analytics, including database design, data cleansing, SQL development,
+        feature extraction and insight generation. AI-generated outputs will be
+        reviewed and validated by the researcher.
+    </p>
+
+    <h3>Project Aim</h3>
+
+    <p>
+        To design and develop an AI-assisted relational database and analytics solution
+        that enables a fictional ultra-running organisation to investigate the
+        characteristics associated with Did Not Finish (DNF) outcomes.
+    </p>
+
+    <h3>Project Objectives</h3>
+
+    <p>The objectives of this project are:</p>
+
+    <ul>
+        <li>Identify the data requirements for analysing DNF outcomes.</li>
+        <li>Investigate the quality and structure of the UTMB World Race dataset.</li>
+        <li>Identify race characteristics that can be analysed in relation to DNF.</li>
+        <li>Design and implement a relational database for the race data.</li>
+        <li>Use Python and Pandas to clean and transform the dataset.</li>
+        <li>Develop SQL queries to analyse DNF patterns.</li>
+        <li>Calculate DNF rates and other relevant measures.</li>
+        <li>Investigate associations between race characteristics and DNF.</li>
+        <li>Develop an interactive dashboard to communicate the findings.</li>
+        <li>Evaluate the usefulness and limitations of AI within the project.</li>
+    </ul>
+
+    <h3>Project Research Questions</h3>
+
+    <p>
+        The key research questions guiding the project are:
+    </p>
+
+    <ul>
+        <li>PQ1: What data entities, attributes and relationships are required to analyse DNF outcomes?</li>
+        <li>PQ2: What data-quality issues exist within the UTMB dataset, and how can they be addressed?</li>
+        <li>PQ3: Which available race characteristics are associated with higher DNF rates?</li>
+        <li>PQ4: How does DNF rate vary between races with different characteristics?</li>
+        <li>PQ5: Can the available race characteristics help identify races with comparatively high DNF rates?</li>
+        <li>PQ6: How useful and accurate are AI-generated database and analytical outputs when validated by the researcher?</li>
+    </ul>
+
+</details>
+
+
+<details>
+    <summary>Client Requirements</summary>
+
+    <h3>What does the client require?</h3>
+
+    <p>
+        The client requires a database and analytics system that can store and analyse
+        ultra-marathon race characteristics and DNF information. The system should
+        allow race organisers to compare DNF rates between races and investigate
+        characteristics that may be associated with higher levels of non-completion.
+    </p>
+
+    <h3>Why does the client need this?</h3>
+
+    <p>
+        The client needs these insights to better understand patterns in race
+        non-completion. Identifying associations between race characteristics and DNF
+        can provide evidence to support further investigation, race planning and
+        risk assessment.
+    </p>
+
+    <h3>What decisions should the database support?</h3>
+
+    <p>The database should support decisions relating to:</p>
+
+    <ul>
+        <li>Identifying races with high DNF rates.</li>
+        <li>Comparing DNF rates between different races.</li>
+        <li>Investigating relationships between race characteristics and DNF.</li>
+        <li>Identifying race characteristics that warrant further investigation.</li>
+        <li>Supporting evidence-based race planning and risk assessment.</li>
+    </ul>
+
+    <h3>Core client requirements</h3>
+
+    <p>
+        The client requirements that need to be satisfied are outlined in Table 1.
+    </p>
+
+    <p><b>Table 1: Client requirements and priorities</b></p>
+
+    <table>
+        <tr>
+            <th>Requirement</th>
+            <th>Description</th>
+            <th>Priority</th>
+        </tr>
+
+        <tr>
+            <td>R1</td>
+            <td>Store race information</td>
+            <td>High</td>
+        </tr>
+
+        <tr>
+            <td>R2</td>
+            <td>Store available race characteristics</td>
+            <td>High</td>
+        </tr>
+
+        <tr>
+            <td>R3</td>
+            <td>Store participant and DNF information</td>
+            <td>High</td>
+        </tr>
+
+        <tr>
+            <td>R4</td>
+            <td>Clean and transform the UTMB dataset</td>
+            <td>High</td>
+        </tr>
+
+        <tr>
+            <td>R5</td>
+            <td>Calculate DNF rates and relevant analytical measures</td>
+            <td>High</td>
+        </tr>
+
+        <tr>
+            <td>R6</td>
+            <td>Analyse associations between race characteristics and DNF</td>
+            <td>High</td>
+        </tr>
+
+        <tr>
+            <td>R7</td>
+            <td>Develop SQL queries for DNF analysis</td>
+            <td>High</td>
+        </tr>
+
+        <tr>
+            <td>R8</td>
+            <td>Provide an interactive DNF analytics dashboard</td>
+            <td>High</td>
+        </tr>
+
+        <tr>
+            <td>R9</td>
+            <td>Use AI to support database development and analysis</td>
+            <td>Medium</td>
+        </tr>
+
+        <tr>
+            <td>R10</td>
+            <td>Validate AI-generated outputs</td>
+            <td>High</td>
+        </tr>
+    </table>
+
+    <h3>Core database tables</h3>
+
+    <p>
+        As the project uses only the UTMB World Race dataset, the database can be kept
+        relatively simple. There is no requirement for customer, product, purchase,
+        training or recommendation tables.
+    </p>
+
+    <p>
+        The database will focus on race information, race characteristics and
+        participation outcomes.
+    </p>
+
+    <p><b>Table 2: Core database tables</b></p>
+
+    <table>
+
+        <tr>
+            <th>Table</th>
+            <th>Purpose</th>
+        </tr>
+
+        <tr>
+            <td>Races</td>
+            <td>Stores information identifying each race and its available characteristics.</td>
+        </tr>
+
+        <tr>
+            <td>Race Outcomes</td>
+            <td>Stores participant, finisher and DNF measures for each race.</td>
+        </tr>
+
+    </table>
+
+</details>
 									      
 								</section>
 
