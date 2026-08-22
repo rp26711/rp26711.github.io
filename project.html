@@ -41,11 +41,11 @@
                                      <p> AI-Assisted Running Retail Database Analytics and Performance Dashboard </p>
 
 									 <h3>Project scenario and client</h3>
-									 <p>Initially, a suitable scenario for the project was identified through research into areas where AI-assisted database analytics could provide practical benefits. The project focuses on running gear and performance, reflecting the growing popularity of running and the challenges associated with the selection of appropriate running gear.</p>
-									 <p>For this project, I position myself as a software and database consultant working for a fictional fitness and running retail organisation. The client is interested in investigating whether the type of running gear purchased by customers is associated with differences in their running performance.</p>
-									 <p>The organisation requires a more structured approach to managing sales and fitness performance data to improve the recommendation of personalised products to their customers, as information relating to customers’ purchases and running performance is difficult to analyse collectively.</p>
-									 <p>The proposed solution is a logical relational database capable of storing, cleansing, managing and analysing customer, product, sales, training and race performance data. The resulting analytical data will be presented through an interactive dashboard to provide the client with meaningful insights into product usage and any associations with running performance.</p>
-									 <p>The project will investigate how AI tools can support the database development and analytics pipeline, including schema design, data cleansing, SQL development, feature extraction and insight generation, while maintaining appropriate human validation, data-quality controls and critical oversight.</p>
+									 <br>Initially, a suitable scenario for the project was identified through research into areas where AI-assisted database analytics could provide practical benefits. The project focuses on running gear and performance, reflecting the growing popularity of running and the challenges associated with the selection of appropriate running gear.</br>
+									 <br>For this project, I position myself as a software and database consultant working for a fictional fitness and running retail organisation. The client is interested in investigating whether the type of running gear purchased by customers is associated with differences in their running performance.</br>
+									 <br>The organisation requires a more structured approach to managing sales and fitness performance data to improve the recommendation of personalised products to their customers, as information relating to customers’ purchases and running performance is difficult to analyse collectively.</br>
+									 <br>The proposed solution is a logical relational database capable of storing, cleansing, managing and analysing customer, product, sales, training and race performance data. The resulting analytical data will be presented through an interactive dashboard to provide the client with meaningful insights into product usage and any associations with running performance.</br>
+									 <br>The project will investigate how AI tools can support the database development and analytics pipeline, including schema design, data cleansing, SQL development, feature extraction and insight generation, while maintaining appropriate human validation, data-quality controls and critical oversight.</br>
 									
 									 <h3>Project Aim</h3>
 									 <p>To design and develop an AI-assisted relational database and analytics solution that enables a fictional running retail organisation to integrate sales and running performance data and generate meaningful business and performance insights that support personalised product recommendations to customers.</p>
@@ -72,31 +72,125 @@
 									 <li>PQ4: Are there observable differences in race performance when customers use specific running products?</li>
 									 <li>PQ5: How accurate and useful are AI-generated database and analytical outputs when compared with human-validated results?</li>
 									 </p>	
-
-									 <h3>Project Objectives</h3>
-								     <p>
-									    x	
-									 </p>
-
-									 <h3>Project Evidence</h3>
-									 <p>
-									    x	
-									 </p>
 									 </details>	
 
 									 <details>
-										<summary>Client Requirements</summary>
-										<h3>Client Requirements</h3>
-										<p>
-											What does the client need?
-											Why does the client need this?
-											What decisions should the database support?
-										</p>
+									 <summary>Client Requirements</summary>
+									 <h3>What does the client require?</h3>
+									 <p>The client requires a system that can identify associations between running gear and running performance. The system should combine customer, training, race and product data to identify patterns that can be used to provide personalised gear recommendations.
+                                     <br> To support meaningful performance analysis, the system should also distinguish between products purchased by customers and products used during training or races. This will allow the organisation to investigate whether particular products or product categories are associated with differences in running performance, rather than assuming that a purchased product was necessarily used during a particular activity or race.
+                                     </p>
+									 <h3>Why does the client need this?</h3>
+									 <p> The client needs these insights to improve the quality and personalisation of product recommendations provided to customers. Recommendations can be incorporated into personalised customer support, allowing recommendations to be based on customer characteristics, training and running performance rather than relying on generic product suggestions. </p>
+									 <h3>What decisions should the database support?</h3>
+									 <p>The database should support decisions relating to:
+									 <li>Personalised product recommendations based on customer characteristics, training and running performance</li>
+									 <li>Product selection, by identifying which types of running gear are associated with differences in performance</li>
+									 <li>Customer segmentation, by identifying different customer profiles and their equipment and training needs</li>
+									 <li>Sales strategies, by helping staff identify appropriate products for different customers</li>
+									 <li>Customer support, by providing evidence-based information that can be used to explain recommendations and improve customer trust</li></p>
+
+									 <h3>Core client requirements</h3>
+									 <p> The client requirements that need to be satisfied are outlined in Table 1.	</p>
+									 <p>
+									 <b>Table 1: Client requirements and priorities</b>
+									 <table>
+										<tr>
+											<th>Requirement</th>
+											<th>Description</th>
+											<th>Priority</th>
+										</tr>
+										<tr>
+											<td>R1</td>
+											<td>Store customer information</td>
+											<td>High</td>
+										</tr>
+										<tr>
+											<td>R2</td>
+											<td>Store running gear and product information</td>
+											<td>High</td>
+										</tr>
+										<tr>
+											<td>R3</td>
+											<td>Record customer purchases</td>
+											<td>High</td>
+										</tr>
+										<tr>
+											<td>R4</td>
+											<td>Record customer training charateristics and activities</td>
+											<td>High</td>
+										</tr>
+										<tr>
+											<td>R5</td>
+											<td>Record race results and performance</td>
+											<td>High</td>
+										</tr>
+										<tr>
+											<td>R6</td>
+											<td>Record products used during training and races</td>
+											<td>High</td>
+										</tr>
+										<tr>
+											<td>R7</td>
+											<td>Analyse associations between running gear and performance</td>
+											<td>High</td>
+										</tr>
+										<tr>
+											<td>R8</td>
+											<td>Analyse associationss between training and performance</td>
+											<td>High</td>
+										</tr>
+										<tr>
+											<td>R9</td>
+											<td>Provide personalised product recommendations</td>
+											<td>High</td>
+										</tr>
+										<tr>
+											<td>R10</td>
+											<td>Track recommendation and sales outcomes</td>
+											<td>Medium</td>
+										</tr>
+										<tr>
+											<td>R11</td>
+											<td>Provide an interactive analytics dashboard</td>
+											<td>High</td>
+										</tr>
+									 </table>
+									 </p>
+									 <h3>Core client databases</h3>
+									 <p>To achieve the requirements outlined in Table 1, the proposed database will require the following core tables, as shown in Table 2. The structure distinguishes between customer purchases and the products used during training and races, allowing product usage to be analysed alongside performance data.</p>
+									 <p><b>Table 2: Core databe tables</b></p>
+									 <table>	
+										<tr>
+											<th>Table</th>
+											<th>Purpose</th>
+										</tr>
+										<tr>
+											<td>Customers</td>
+											<td>Stores customer characteristics and relevant demographic information</td>
+										</tr>
+										<tr>
+											<td>Products</td>
+											<td>Stores running gear and product information</td>
+										</tr>
+										<tr>
+											<td>Purchases</td>
+											<td>Records products purchased by customers</td>
+										</tr>
+										<tr>
+											<td>Training</td>
+											<td>Stores customers trainng activities and characteristics</td>
+										</tr>
+										<tr>
+											<td>Race Results</td>
+											<td>Stores race performance and outcomes</td>
+										</tr>
+										<tr>
+											<td>Product Usage</td>
+											<td>Record products used by customers during training and races</td>
+										</tr>
+									 </table>
 									      
-
-
-				
-							
 								</section>
 
 						</div>
