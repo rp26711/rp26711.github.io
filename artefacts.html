@@ -35,24 +35,18 @@
 								 <span class="image main"><img src="images/artefacts_banner.jpg" alt="" /></span>
 
 								 <details>
-									<summary>Web Scrapping Activity</summary>
-									<p>This task deepened my understanding of web scraping as a data-wrangling process rather than simple extraction. I learnt to critically consider data quality, limitations, and ethical/security risks while using Requests and BeautifulSoup to transform unstructured web data into structured formats.</p>
-								 </details>
-
-								 <details>
 									<summary>Data Cleaning Activity</summary>
-									<p>The data cleaning activity helped me reflect on data cleaning as a structured and repeatable process rather than an isolated task. Working with the UNICEF dataset demonstrated how transformation, fuzzy matching and scripting can improve data quality. I also developed a clearer understanding of how defined inputs, outputs and data models support effective automation and scalable data pipelines</p>
-								 </details>
-
-								 <details>
-									<summary>Data Management Pipeline Test</summary>
-									<p>This test prompted me to reflect on the difference between code that works and code that is reliable and maintainable. I recognised that testing, version control, documentation and modular design are essential for developing reproducible data pipelines. It also highlighted how Python best practices improve clarity, reduce errors and support effective collaboration throughout the development process.</p>
-								 </details>
+									<p>The data cleaning task strengthened my understanding of how structured data preparation influences data quality, consistency, and efficiency. Kazil and Jarmul (2016) provide an example in their book using the UNICEF Zimbabwe survey dataset, which involves converting SPSS files into CSV format, obtaining full variable descriptions through web scraping, and replacing short variable names with meaningful headers to improve the readability of the dataset. I worked through this example to develop a practical understanding of the data cleaning process and applied the techniques demonstrated to the dataset. As part of this process, I developed a systematic approach to checking whether all variables had corresponding headers before removing unmatched fields and aligning the remaining data with their descriptions. Further examination of the dataset helped me understand the importance of identifying data types, missing values, duplicates, inconsistent formatting, and potential errors before conducting analysis (Huxley, 2020). I also used fuzzy matching to identify values that were similar but not identical, allowing potential inconsistencies, such as differences in spelling or formatting, to be flagged for review. Combining these processes into a single script demonstrated how scripting can make data cleaning more structured, repeatable, and efficient (Kazil and Jarmul, 2016). Overall, working through the example provided by Kazil and Jarmul (2016) improved my practical understanding of data cleaning and demonstrated how clearly defined inputs, outputs, data models, and automated transformations can support effective data pipelines and provide a stronger foundation for accurate and scalable data analysis.</p>
+									<li><a href="documents/sav_to_csv.py" class="button">Data Cleaning Activity .SAV to .CSV Script</a></li>
+									<li><a href="documents/final_headers.py" class="button">Data Cleaning Activity Headers Webscrapping Script</a></li>
+									<li><a href="documents/final_code.py" class="button">Data Cleaning Activity Final Script</a></li>
+								 
+								</details>
 
 								 <details>
 									<summary>Normalisation Task</summary> 
 									<p>The normalisation task strengthened my understanding of how database structure influences data quality and efficiency. Database normalisation is a systematic process of organising relational data into progressively higher normal forms (1NF, 2NF, and 3NF) to minimise redundancy, prevent update anomalies, and maintain data integrity (Chen, 2023). Working through 1NF, 2NF, and 3NF helped me recognise and resolve redundancy and dependency issues systematically. My normalised task achieved 1NF by ensuring that each cell contained only a single value, achieved 2NF by ensuring that all attributes were fully dependent on the primary key, and achieved 3NF by ensuring that non-key attributes depended on “the key, the whole key, and nothing but the key.” I also reflected on how appropriate data modelling supports scalable solutions, reduces inconsistencies, and provides a stronger foundation for managing complex datasets.</p>
-									<li><a href="documents/normalisation_task.docx" class="button">Normalisation Task</a></li>
+									<li><a href="documents/normalisation_task.xlsx" class="button">Normalisation Task</a></li>
 								 </details>
 
 								 <details>
@@ -72,6 +66,7 @@
 
 								 References
 								 <li>Chen, W. (2023) <i>Database design and implementation</i>. 2nd edn. Russellville: ATU Faculty OER Books and Materials. Available at: https://orc.library.atu.edu/atu_oer/2/ (Accessed: 6 September 2026).</li>
+								 <li>Huxley, K. (2020) 'Data cleaning', in Atkinson, P. et al. (eds) <i>SAGE Research Methods Foundations</i>. London: SAGE Publications Ltd. Available at: https://doi.org/10.4135/9781526421036842861.</li>
 								 <li>Kent, W. (1983) ‘A simple guide to five normal forms in relational database theory’, <i>Communications of the ACM</i>, 26(2), pp. 120–125. Available at: https://doi.org/10.1145/358024.358054.</li>
 		
 								</section>
